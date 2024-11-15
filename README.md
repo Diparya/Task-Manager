@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Task Manager
 
-First, run the development server:
+## Overview
 
-```bash
+The Task Manager is a web application for managing tasks with features like task creation, completion, priority management, sorting, and searching. The app allows users to:
+
+- Add new tasks.
+- Edit existing tasks.
+- Mark tasks as complete.
+- Delete tasks.
+- Set priorities for tasks (low, medium, high).
+- Search tasks by title.
+- Sort tasks by priority or completion status.
+
+All tasks are saved in local storage, so they persist even after a page refresh.
+
+## Setup and Launch
+To set up and run this application locally, follow these steps:
+## Prerequisites
+Node.js and npm: Make sure you have Node.js and npm installed on your computer.
+## Installation
+### Clone the repository:
+git clone https://github.com/Diparya/Task-Manager.git \
+cd Task-Manager
+### Install dependencies:
+npm install
+### Run the application:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Open the application:
+Open your browser and navigate to http://localhost:3000 to see the Task Manager in action.
+# Assumptions
+During the development of this Task Manager, the following assumptions were made:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Local Storage: Tasks are saved to the browser's local storage to ensure persistence between sessions. This approach is lightweight and doesn't require a backend database.
+2. No authentication: Since it's a simple task manager, no user authentication is implemented. It assumes a single user managing their tasks.
+3. Task Priority Levels: Only three priority levels (low, medium, high) are provided for simplicity. These could be expanded in future versions.
+4. Responsiveness: The application is designed to be responsive, but certain layout adjustments may be needed on very small screens.
+# Screenshots
+Task Manager UI
+![App Screenshot](https://github.com/Diparya/Task-Manager/blob/51f7fcc7195f11fd5753a20e9bee96d397224026/public/screenshots/Screenshot%202024-11-15%20162329.png)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Add new tasks
+![App Screenshot](https://github.com/Diparya/Task-Manager/blob/51f7fcc7195f11fd5753a20e9bee96d397224026/public/screenshots/Screenshot%202024-11-15%20162508.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edit existing tasks
+![App Screenshot](https://github.com/Diparya/Task-Manager/blob/51f7fcc7195f11fd5753a20e9bee96d397224026/public/screenshots/Screenshot%202024-11-15%20162525.png)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
